@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+  <head>
+      <title>About</title>
+  </head>
+
+  <body>
+      <h1>Rango says...</h1>
+      <div>
+        This tutorial has been put together by Trine. <br />
+          <strong>{{ boldmessage }}</strong><br />
+      </div>
+      <div>
+          <a href="/rango/">Index</a><br />
+          <img src="{{ MEDIA_URL}}cat.jpg" />
+          <!--alt="Picture of Cat" /> if picture cannot be loaded, this text will accour with frame-->
+          <img src="{% static "images/hi.gif" %}"
+      </div>
+
+  </body>
+
+</html>

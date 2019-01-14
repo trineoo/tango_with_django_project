@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load staticfiles %}
+
 <html>
 
   <head>
@@ -13,7 +16,29 @@
       </div>
       <div>
           <a href="/rango/about/">About</a><br />
+          <img src="{% static "images/rango.jpg" %}"
+          alt="Picture of Rango" /> <!--if picture cannot be loaded, this text will accour with frame-->
       </div>
+
   </body>
 
 </html>
+
+
+
+<!--
+
+<html>
+  <head>
+    <title>Rango</title>
+    CSS:  <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    JavaScript:  <script src="{% static "js/jquery.js" %}"></script>
+  </head>
+
+  <body>
+    Image:  <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" />
+  </body>
+
+</html>
+
+-->
